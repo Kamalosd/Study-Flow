@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Subject from "./pages/subject/Subject";
+import Goal from "./pages/goal/Goal";
 
 import {
   BrowserRouter,
@@ -56,7 +57,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     path="subject"
     element={<Subject />}
   />
+
+  <Route
+    path="goal"
+    element={<Goal />}
+  />
 </Route>
+
+
+
 
 
       {/* =========================
