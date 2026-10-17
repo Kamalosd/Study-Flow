@@ -14,29 +14,29 @@ const Footer = () => {
   </div>
 
   <div>
-    <h2 className='font-bold mb-4'>Features</h2>
+    <h2 className='font-bold mb-4'>Product</h2>
     <ul className='flex flex-col gap-2'>
-      <li>Feature</li>
-      <li>Feature</li>
-      <li>Feature</li>
+      <li>Features</li>
+      <li>pricing</li>
+      <li>FAQ</li>
     </ul>
   </div>
 
   <div>
     <h2 className='font-bold mb-4'>Company</h2>
     <ul className='flex flex-col gap-2'>
-      <li>Feature</li>
-      <li>Feature</li>
-      <li>Feature</li>
+      <li>About</li>
+      <li>Blog</li>
+      <li>Career</li>
     </ul>
   </div>
 
   <div>
     <h2 className='font-bold mb-4'>Support</h2>
     <ul className='flex flex-col gap-2'>
-      <li>Feature</li>
-      <li>Feature</li>
-      <li>Feature</li>
+      <li>Contact</li>
+      <li>Help center</li>
+      <li>study help</li>
     </ul>
   </div>
 
