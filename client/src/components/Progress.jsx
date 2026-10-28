@@ -12,8 +12,8 @@ const Progress = () => {
              <progress className="progress progress-accent w-69 " value="66" max="100"></progress>
         <ul className='space-y-3 px-2'>
           <li className='flex items-center gap-5 border border-black px-2'><FaCheck />solve 5 math question</li>
-          <li className='flex items-center gap-5 border border-black px-2'><FaCheck />solve 5 math question</li>
-          <li className='flex items-center gap-5 border border-black px-2'><FaCheck />solve 5 math question</li>
+          <li className='flex items-center gap-5 border border-black px-2'><FaCheck />solve 5 english question</li>
+          <li className='flex items-center gap-5 border border-black px-2'><FaCheck />solve 5 history question</li>
         </ul>
       </div>
       
