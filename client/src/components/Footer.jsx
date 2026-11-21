@@ -1,50 +1,70 @@
 import React from 'react'
-import { FaFacebook } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
-  const date=new Date()
+  const date = new Date()
+
   return (
-    <div className='w-full bg-gray-300  mx-auto py-6 mt-6 '>
+    <footer className="w-full bg-gray-900 text-white mt-10">
 
-     <div className='container mx-auto grid grid-cols-4 gap-8 px-6 '>
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 py-10">
 
-  <div>
-    <h1 className='font-bold mb-4'>studyFlow</h1>
-    <p>akjXHJAH BHJABDX</p>
-  </div>
+        {/* Brand Section */}
+        <div>
+          <h1 className="text-2xl font-bold mb-4">StudyFlow</h1>
+          <p className="text-gray-400 leading-6">
+            Your learning journey starts here. Improve your skills,
+            explore new opportunities, and achieve your goals with StudyFlow.
+          </p>
 
-  <div>
-    <h2 className='font-bold mb-4'>Product</h2>
-    <ul className='flex flex-col gap-2'>
-      <li>Features</li>
-      <li>pricing</li>
-      <li>FAQ</li>
-    </ul>
-  </div>
+          <div className="flex gap-4 mt-5 text-xl">
+            <FaFacebook className="cursor-pointer hover:text-blue-500" />
+            <FaInstagram className="cursor-pointer hover:text-pink-500" />
+            <FaTwitter className="cursor-pointer hover:text-sky-400" />
+            <FaLinkedin className="cursor-pointer hover:text-blue-400" />
+          </div>
+        </div>
 
-  <div>
-    <h2 className='font-bold mb-4'>Company</h2>
-    <ul className='flex flex-col gap-2'>
-      <li>About</li>
-      <li>Blog</li>
-      <li>Career</li>
-    </ul>
-  </div>
+        {/* Product Section */}
+        <div>
+          <h2 className="font-bold text-lg mb-4">Product</h2>
+          <ul className="flex flex-col gap-3 text-gray-400">
+            <li className="hover:text-white cursor-pointer">Features</li>
+            <li className="hover:text-white cursor-pointer">Pricing</li>
+            <li className="hover:text-white cursor-pointer">FAQ</li>
+          </ul>
+        </div>
 
-  <div>
-    <h2 className='font-bold mb-4'>Support</h2>
-    <ul className='flex flex-col gap-2'>
-      <li>Contact</li>
-      <li>Help center</li>
-      <li>study help</li>
-    </ul>
-  </div>
+        {/* Company Section */}
+        <div>
+          <h2 className="font-bold text-lg mb-4">Company</h2>
+          <ul className="flex flex-col gap-3 text-gray-400">
+            <li className="hover:text-white cursor-pointer">About Us</li>
+            <li className="hover:text-white cursor-pointer">Blog</li>
+            <li className="hover:text-white cursor-pointer">Careers</li>
+          </ul>
+        </div>
 
-</div>
+        {/* Support Section */}
+        <div>
+          <h2 className="font-bold text-lg mb-4">Support</h2>
+          <ul className="flex flex-col gap-3 text-gray-400">
+            <li className="hover:text-white cursor-pointer">Contact Us</li>
+            <li className="hover:text-white cursor-pointer">Help Center</li>
+            <li className="hover:text-white cursor-pointer">Study Help</li>
+          </ul>
+        </div>
 
-<p className='border-t mt-4 text-center pt-4'>{date.getFullYear()}  shkjksj abdhbs</p>
-      
-    </div>
+      </div>
+
+      {/* Copyright Section */}
+      <div className="border-t border-gray-700 py-5 text-center text-gray-400">
+        <p>
+          © {date.getFullYear()} StudyFlow. All rights reserved.
+        </p>
+      </div>
+
+    </footer>
   )
 }
 
